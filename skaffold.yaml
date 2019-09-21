@@ -3,7 +3,8 @@ kind: Config
 build:
   artifacts:
   - image: weaveworksdemos/orders
+    context: docker/orders
 deploy:
   kubectl:
     manifests:
-      - orders-dep*
+    - orders-dep.yaml
