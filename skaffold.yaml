@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta14
+kind: Config
+build:
+  artifacts:
+  - image: weaveworksdemos/orders:0.4.7
+deploy:
+  kubectl:
+    manifests:
+      - orders-dep*
