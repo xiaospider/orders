@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: orders
-        image: weaveworksdemos/orders:0.4.7
+        image: weaveworksdemos/orders
         env:
          - name: ZIPKIN
            value: zipkin.istio-system.svc.cluster.local
